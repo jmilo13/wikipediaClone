@@ -1,0 +1,39 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+header img{
+    width: 5.7rem;
+    height: 5.7rem;
+}
+header h1 span{
+    display: flex;
+    justify-content: center;
+    font-family: Linux Libertine,Georgia,Times,serif;
+    
+}
+header h1 .title{
+    font-size: 3.2rem;
+    color: transparent;
+    background-image: url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg);
+    width: 15rem;
+    height: 2.5rem;
+    background-position: 0 -218px;
+    background-size: 100%;
+}
+header h1 .subtitle{
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-indent: .2rem;
+}
