@@ -146,3 +146,62 @@ main .search-section .principal-language .info-language-box{
 .principal-language .info-language-box a:hover{
     text-decoration: underline;
 }
+main .search-section .other-language{
+    border-radius: 0.2rem;
+    border: 1px solid #a2a9b1;
+    outline: 1.6rem solid #fff;
+    background-color: #f8f9fa;
+    display: flex;
+    padding: 0.6rem 1.2rem;
+    margin: 2rem auto 4rem auto;
+    width: 26.766rem;
+    height: 3.6rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .search-section .other-language:hover{
+    background-color: #fff;
+}
+main .search-section .other-language:focus{
+    border-color: #36c;
+    box-shadow: inset 0 0 0 1px #36c;
+}
+main .search-section .other-language .language-icon{
+    width: 2.2rem;
+    height: 2.2rem;
+    background-image: url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg);
+    background-position: 0 -617px;
+}
+main .search-section .other-language a{
+    color: #36c;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0 0.64rem;
+}
+main .search-section .other-language span{
+    color: #36c;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+main .support{
+    display: flex;
+    flex-direction: column;
+    padding: 0.96rem 0.64rem 1.28rem;
+}
+main .support .principal-fondation{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .support .principal-fondation i{
+    background-image: url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg);
+    background-position: 0 -212px;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 1.5rem;
+}
+main .support .principal-fondation p{
+    text-align: center;
+}
