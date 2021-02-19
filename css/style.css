@@ -1,3 +1,6 @@
+:root{
+    --first-color: #36c
+}
 *{
     margin: 0rem;
     padding: 0rem;
@@ -8,6 +11,9 @@ html{
 }
 p{
     color: #54595d;
+}
+.icon-pic{
+    background-image: url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg);
 }
 body{
     width: 100vw;
@@ -35,7 +41,6 @@ header h1 span{
 header h1 .title{
     font-size: 3.2rem;
     color: transparent;
-    background-image: url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg);
     width: 15rem;
     height: 2.5rem;
     background-position: 0 -218px;
@@ -77,8 +82,8 @@ main .search-section .search-bar input:hover{
 }
 main .search-section .search-bar input:focus{
     outline: none;
-    border-color: #36c; 
-    box-shadow: inset 0 0 0 1px #36c; 
+    border-color: var(--first-color); 
+    box-shadow: inset 0 0 0 1px var(--first-color); 
 }
 main .search-section .search-bar #select-language{
     position: relative;
@@ -95,14 +100,14 @@ main .search-section .search-bar #select-language{
 }
 main .search-section .search-bar #select-language:focus{
     outline: none;
-    border: solid 0.1rem #36c;
+    border: solid 0.1rem var(--first-color);
 }
 main .search-section .search-bar .icon-search-box{
     position: relative;
     z-index: 1;
     min-width: 5.6rem; 
     height: 4.4rem;
-    background-color: #36c;
+    background-color: var(--first-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,7 +142,7 @@ main .search-section .principal-language .info-language-box{
     margin-bottom: 1.6rem;
 }
 .principal-language .info-language-box a{
-    color: #36c;
+    color: var(--first-color);
     font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
@@ -163,40 +168,40 @@ main .search-section .other-language:hover{
     background-color: #fff;
 }
 main .search-section .other-language:focus{
-    border-color: #36c;
-    box-shadow: inset 0 0 0 1px #36c;
+    border-color: var(--first-color);
+    box-shadow: inset 0 0 0 1px var(--first-color);
 }
 main .search-section .other-language .language-icon{
     width: 2.2rem;
     height: 2.2rem;
-    background-image: url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg);
     background-position: 0 -617px;
 }
 main .search-section .other-language a{
-    color: #36c;
+    color: var(--first-color);
     font-size: 1.4rem;
     font-weight: 700;
     text-decoration: none;
     padding: 0 0.64rem;
 }
 main .search-section .other-language span{
-    color: #36c;
+    color: var(--first-color);
     font-size: 1.4rem;
     font-weight: 500;
 }
 main .support{
     display: flex;
     flex-direction: column;
-    padding: 0.96rem 0.64rem 1.28rem;
+    padding: 0.96rem 0.64rem 1.28rem 0.64rem;
+    width: 100%;
 }
 main .support .principal-fondation{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3rem;
 }
 main .support .principal-fondation i{
-    background-image: url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg);
     background-position: 0 -212px;
     width: 42px;
     height: 42px;
@@ -204,4 +209,91 @@ main .support .principal-fondation i{
 }
 main .support .principal-fondation p{
     text-align: center;
+}
+
+main .support .other-fondation{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+main .support .other-fondation .fondation-box{
+    display: grid;
+    grid-template-columns: 4.7rem 1fr;
+    width: 50%;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 4rem;
+    padding-right: 1rem;
+}
+main .support .other-fondation .fondation-box div{
+    grid-column: 2;
+    padding-left: 0.5rem;
+}
+main .support .other-fondation .fondation-box h3{
+    font-size: 1.4rem;
+    color: var(--first-color);
+    font-weight: normal;
+
+}
+main .support .other-fondation .fondation-box .icon-box-one{
+    background-position: 0 0;
+    width: 47px;
+    height: 47px;
+}
+main .support .other-fondation .fondation-box .icon-box-two{
+    background-position: 0 -446px;
+    width: 36px;
+    height: 36px;
+}
+main .support .other-fondation .fondation-box .icon-box-three{
+    background-position: 0 -482px;
+    width: 37px;
+    height: 37px;
+}
+main .support .other-fondation .fondation-box .icon-box-fourth{
+    background-position: 0 -126px;
+    width: 37px;
+    height: 37px;
+}
+main .support .other-fondation .fondation-box .icon-box-five{
+    background-image: url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikinews-logo_sister@2x.png);
+    background-size: 47px 26px;;
+    width: 47px;
+    height: 26px;
+}
+main .support .other-fondation .fondation-box .icon-box-six{
+    background-position: 0 -163px;
+    width: 49px;
+    height: 49px;
+}
+main .support .other-fondation .fondation-box .icon-box-seven{
+    background-position: 0 -409px;
+    width: 43px;
+    height: 37px;
+}
+main .support .other-fondation .fondation-box .icon-box-eigth{
+    background-position: 0 -286px;
+    width: 42px;
+    height: 42px;
+}
+main .support .other-fondation .fondation-box .icon-box-nine{
+    background-position: 0 -47px;
+    width: 42px;
+    height: 42px;
+}
+main .support .other-fondation .fondation-box .icon-box-ten{
+    background-position: 0 -328px;
+    width: 39px;
+    height: 39px;
+}
+main .support .other-fondation .fondation-box .icon-box-eleven{
+    background-position: 0 -367px;
+    width: 42px;
+    height: 42px;
+}
+main .support .other-fondation .fondation-box .icon-box-twelve{
+    background-position: 0 -89px;
+    width: 37px;
+    height: 37px;
 }
