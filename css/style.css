@@ -136,11 +136,11 @@ main .search-section .principal-language{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
     margin-top: 1.6rem;
 }
 main .search-section .principal-language .info-language-box{
     width: 33.3%;
+    height: 6.4rem;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -156,6 +156,9 @@ main .search-section .principal-language .info-language-box{
 }
 .principal-language .info-language-box a:hover{
     text-decoration: underline;
+}
+.principal-language .info-language-box p{
+    text-align: center;
 }
 main .search-section .other-language{
     border-radius: 0.2rem;
@@ -193,6 +196,19 @@ main .search-section .other-language span{
     color: var(--first-color);
     font-size: 1.4rem;
     font-weight: 500;
+}
+main .search-section .line{
+    background-color: #c8ccd1;
+    display: block;
+    position: relative;
+    max-width: 460px;
+    width: 80%;
+    margin: -16px auto 16px;
+    margin: -1.6rem auto 1.6rem;
+    height: 1px;
+    transition: max-width .2s ease-out 400s;
+    top: -40px;
+    z-index: -1;
 }
 main .support{
     display: flex;
