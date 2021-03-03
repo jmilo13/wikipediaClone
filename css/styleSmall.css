@@ -76,7 +76,7 @@ main .search-section .search-bar{
     
 }
 main .search-section .search-bar  input{
-    width: calc(100vw - 2rem);
+    width: calc(100vw - 4rem);
     height: 4.4rem;
     display: flex;
     position: absolute;
