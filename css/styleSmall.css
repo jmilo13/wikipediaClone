@@ -60,9 +60,9 @@ header h1 .subtitle{
 }
 main{
     width: 100%;
+    padding: 1rem;
 }
 main .search-section{
-    border-bottom: solid 0.1rem #d0d3d7;
     width: 100%;   
 }
 main .search-section .search-bar{
@@ -215,6 +215,7 @@ main .support{
     flex-direction: column;
     padding: 0.96rem 0.64rem 1.28rem 0.64rem;
     width: 100%;
+    border-top: solid 0.1rem #d0d3d7;
 }
 main .support .principal-fondation{
     width: 100%;
@@ -366,7 +367,7 @@ footer{
     padding: 2rem;
     line-height: 1.5;
 }
-footer p a::after{
+footer p .other-information::before{
     content: "\2022";
     display: inline-block;
     font-size: 13px;

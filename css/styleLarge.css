@@ -1,0 +1,65 @@
+main .support{
+    display: grid;
+    grid-template: 1fr / 30% 70%;
+    padding-top: 4rem;
+    height: 100%;
+    padding: 4rem 3% 0 3%;
+}
+
+main .support .principal-fondation{
+    display: grid;
+    grid-template-columns: 4.7rem 1fr;
+    grid-column-gap: 1rem;
+    align-items: flex-start;
+    padding-left: 0.5rem;
+    max-width: 35rem;
+}
+
+main .support .principal-fondation p{
+    text-align: left;
+} 
+
+main .support .other-fondation {
+    grid-row: 1 / 3;
+    grid-column: 2;
+    padding-left: 2rem;
+    max-height: 36rem;
+}
+
+main .support .other-fondation .fondation-box{
+    margin-bottom: 0;
+    max-height: 9rem;
+}
+
+main .support .download-app{
+    display: grid;
+    grid-template-columns: 4.7rem 1fr;
+    grid-column-gap: 1rem;
+    align-items: flex-start;
+    max-width: 35rem;
+}
+
+main .support .download-app .title-section {
+    grid-column: 2;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+main .support .download-app .title-section i{
+    position: absolute;
+    left: calc(3% + 1.5rem);
+    transform: scale(1);
+}
+
+main .support .download-app p{
+    text-align: left;
+    padding-left: 1rem;
+    grid-column: 2;
+    padding: 0;
+}
+
+main .support .download-app .buttons-app {
+    flex-direction: column;
+    align-items: flex-start;
+    grid-column: 2;
+}
