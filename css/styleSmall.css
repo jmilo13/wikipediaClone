@@ -253,7 +253,7 @@ main .support .other-fondation .fondation-box div{
     grid-column: 2;
     padding-left: 0.5rem;
 }
-main .support .other-fondation .fondation-box h3{
+main .support .other-fondation .fondation-box h1{
     font-size: 1.4rem;
     color: var(--first-color);
     font-weight: normal;

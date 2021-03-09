@@ -7,7 +7,6 @@
     <title>Wikipedia Clone</title>
     <meta name="description" content="Esta es una replica de la página de inicio de Wikipedia.org para el curso de HTML CSS"/>
     <meta name="robots" content="index,follow"/>
-    <script src="https://kit.fontawesome.com/b4a7ea8469.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styleSmall.css"/>
     <link rel="stylesheet" href="./css/styleMedium.css" media="screen and (min-width: 480px)">
     <link rel="stylesheet" href="./css/styleLarge.css" media="screen and (min-width: 769px)">
@@ -23,7 +22,8 @@
     <main>
         <section class="search-section">
             <div class="search-bar">
-                <input type="text">
+                <input id="text-search-bar" type="text">
+                <label for="text-search-bar">Barra de busqueda</label>
                 <select name="select-language" id="select-language">
                     <option value="ar" lang="ar">العربية</option><!-- Al-ʿArabīyah -->
                     <option value="ast" lang="ast">Asturianu</option>
@@ -97,7 +97,8 @@
                     <option value="ko" lang="ko">한국어</option><!-- Hangugeo -->
                 </select>
                 <div class="icon-search-box">
-                    <a href="#"></a>
+                    <a id="search-button-link" href="#"></a>
+                    <label style="display: none;" for="search-button-link">Buscar</label>
                 </div>
             </div>
             <div class="principal-language" >
@@ -159,84 +160,84 @@
                 <a href="#" class="fondation-box">
                     <i class="icon-pic icon-box-one"></i>
                     <div>
-                        <h3>Commons</h3>
+                        <h1>Commons</h1>
                         <p>Fotos libremente utilizables y más</p>
                     </div>
                 </a>
                 <a href="#" class="fondation-box">
                     <i class="icon-pic icon-box-two"></i>
                     <div>
-                        <h3>Wikiviajes</h3>
+                        <h1>Wikiviajes</h1>
                         <p>La guía de viajes libre</p>
                     </div>
                 </a>
                 <a href="#" class="fondation-box">
                     <i class="icon-pic icon-box-three"></i>
                     <div>
-                        <h3>Wikicionario</h3>
+                        <h1>Wikicionario</h1>
                         <p>El diccionario libre</p>
                     </div>
                 </a>
                 <a href="#" class="fondation-box">
                     <i class="icon-pic icon-box-fourth"></i>
                     <div>
-                        <h3>Wikilibros</h3>
+                        <h1>Wikilibros</h1>
                         <p>Libros de contenido libre</p>
                     </div>
                 </a>
                 <a href="#" class="fondation-box">
                     <i class="icon-pic icon-box-five"></i>
                     <div>
-                        <h3>Wikinoticias</h3>
+                        <h1>Wikinoticias</h1>
                         <p>LA fuente de noticias libres</p>
                     </div>
                 </a>
                 <a href="#" class="fondation-box">
                     <i class="icon-pic icon-box-six"></i>
                     <div>
-                        <h3>Wikidata</h3>
+                        <h1>Wikidata</h1>
                         <p>Base de conocimiento libre</p>
                     </div>
                 </a>
                 <a href="#" class="fondation-box">
                     <i class="icon-pic icon-box-seven"></i>
                     <div>
-                        <h3>Wikiversidad</h3>
+                        <h1>Wikiversidad</h1>
                         <p>Plataforma educativa libre</p>
                     </div>
                 </a>
                 <a href="#" class="fondation-box">
                     <i class="icon-pic icon-box-eigth"></i>
                     <div>
-                        <h3>Wikiquote</h3>
+                        <h1>Wikiquote</h1>
                         <p>FLa colección de citas</p>
                     </div>
                 </a>
                 <a href="#" class="fondation-box">
                     <i class="icon-pic icon-box-nine"></i>
                     <div>
-                        <h3>MediaWiki</h3>
+                        <h1>MediaWiki</h1>
                         <p>Aplicación wiki libre y abierta</p>
                     </div>
                 </a>
                 <a href="#" class="fondation-box">
                     <i class="icon-pic icon-box-ten"></i>
                     <div>
-                        <h3>Wikisource</h3>
+                        <h1>Wikisource</h1>
                         <p>La biblioteca libre</p>
                     </div>
                 </a>
                 <a href="#" class="fondation-box">
                     <i class="icon-pic icon-box-eleven"></i>
                     <div>
-                        <h3>Wikispecies</h3>
+                        <h1>Wikispecies</h1>
                         <p>Directorio de especies libre</p>
                     </div>
                 </a>
                 <a href="#" class="fondation-box">
                     <i class="icon-pic icon-box-twelve"></i>
                     <div>
-                        <h3>Meta-Wiki</h3>
+                        <h1>Meta-Wiki</h1>
                         <p>Coordinción y documentación comunitaria</p>
                     </div>
                 </a>
@@ -252,8 +253,10 @@
                     Guarda tus artículos favoritos para leerlos sin conexión, sincroniza tus listas de lectura en varios dispositivos y personaliza tu experiencia de lectura con la aplicación oficial de Wikipedia.
                 </p>
                 <div class="buttons-app">
-                    <a href="#" class="play-store-button icon-pic"></a>
-                    <a href="#" class="app-store-button icon-pic"></a>
+                    <a id="android-button" href="#" class="play-store-button icon-pic"></a>
+                    <label style="display: none;" for="android-button">Descarga Android</label>
+                    <a id="apple-button" href="#" class="app-store-button icon-pic"></a>
+                    <label style="display: none;" for="apple-button">Descarga Apple</label>
                 </div>
             </div>
         </section>
@@ -261,6 +264,7 @@
     <footer>
         <p>Esta página está disponible bajo la <a href="#">licencia Creative Commons Atribución-CompartirIgual</a><a class="other-information" href="#">Términos de uso</a><a class="other-information" href="#">Normativa de privacidad</a></p>
 
-    </footer>    
+    </footer>  
+    <script src="https://kit.fontawesome.com/b4a7ea8469.js" crossorigin="anonymous"></script>  
 </body>
 </html>
