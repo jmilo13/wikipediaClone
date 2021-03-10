@@ -96,7 +96,7 @@ main .search-section .search-bar #select-language{
     z-index: 1;
     width: 3.9rem;
     height: 4rem;
-    color: grey;
+    color: var(--text-color);
     border: none;
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -340,7 +340,7 @@ main .support .download-app div i{
     margin-right: 0.2rem;
     transform: scale(0.7);
 }
-main .support .download-app div h2{
+main .support .download-app div h1{
     color: #54595d;
     font-weight: 700;
     font-size: 1.3rem;
